@@ -49,9 +49,6 @@ button {
 /* ==============HEADER============= */
 
 .header {
-  background: #fff;
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -170,6 +167,15 @@ button {
 .hero {
   background: #2e2f42;
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .hero-title {
@@ -180,7 +186,8 @@ button {
   text-align: center;
   color: #fff;
   max-width: 496px;
-  margin: 48px auto;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .hero-order-btn {
@@ -222,6 +229,35 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+}
+
+.advantages-box {
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantages-box-difer {
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icons {
+  fill: #2e2f42;
 }
 
 .advantages-items {
@@ -274,16 +310,38 @@ button {
 
 .team-items {
   display: flex;
-  padding: 0px 0px 32px 0px;
   gap: 24px;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .team-list {
   background-color: #ffffff;
   border-bottom: 1px;
   width: calc((100% - 3 * 24px) / 4);
+}
+
+.team-soc-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background-color: #404bbf;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-soc-link:hover {
+  background-color: #31d0aa;
+}
+
+.team-icons {
+  display: flex;
+  gap: 24px;
+  padding-left: 16px;
+  padding-top: 8px;
+}
+
+.team-soc-icons {
+  fill: #ffffff;
 }
 
 .list-first {
@@ -295,7 +353,6 @@ button {
 }
 
 .team-image {
-  padding-bottom: 32px;
 }
 
 .team-title-pers {
@@ -310,7 +367,6 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
-  padding-bottom: 32px;
   text-align: center;
 }
 
@@ -342,7 +398,6 @@ button {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 
 .portfolio-list {
@@ -356,8 +411,6 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 32px;
-  padding-left: 16px;
   margin-bottom: 8px;
 }
 
@@ -367,8 +420,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-bottom: 32px;
-  padding-left: 16px;
 }
 
 /* =======FOOTER====== */
@@ -376,6 +427,12 @@ button {
 .footer {
   background: #2e2f42;
   padding: 100px 0;
+}
+
+.footer-info {
+}
+
+.footer-social {
 }
 
 .footer-logo {
@@ -386,8 +443,6 @@ button {
   text-transform: uppercase;
   color: #4d5ae5;
   display: flex;
-  padding-top: 100px;
-  padding-bottom: 16px;
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -407,8 +462,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  padding-bottom: 100px;
-  display: flex;
   max-width: 264px;
 }
 
